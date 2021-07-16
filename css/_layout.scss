@@ -1,0 +1,41 @@
+@import 'mixins';
+
+body {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template:
+    '... header ...' 8vh
+    '... main  ...' 1fr
+    '... ..... ...' 50px
+    '... footer ...'
+    / 4vw minmax(300px, 1fr) 4vw;
+}
+
+header {
+  grid-area: header;
+  @include fixed(8vh);
+  top: 0;
+  left: 0;
+  @media screen and (max-width:812px) {
+    @include fixed(10vh);
+  }
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+   bottom: 0;
+  left: 0;
+  line-height: 1.2;
+  padding: 5px;
+  @include fixed(12vh);
+  @include mq(tablet){
+@include fixed(16vh);
+
+  }
+}

@@ -1,0 +1,52 @@
+@import 'valiables';
+
+// レスポンシブ対応
+@mixin mq($breakPoint) {
+  @media screen and(max-width:#{map-get($breakPoints, $breakPoint)}) {
+    @content;
+  }
+}
+
+
+// ボタン
+@mixin btnStyle(
+  $bg-color: $accent-color,
+  $color: #fff,
+  $padding: 10px 50px,
+  $font-size: 1.8rem
+) {
+  background-color: $bg-color;
+  color: $color;
+  padding: $padding;
+  font-size: $font-size;
+
+  border: 2px solid $accent-color;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.6);
+}
+
+// インライン要素を中央寄せ
+@mixin align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+// ギャラリー
+@mixin grid-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+// ヘッダーとフッダーの固定メニュー
+@mixin fixed($height) {
+  background-color: $main-color;
+  height: $height;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  z-index: 50;
+}
+

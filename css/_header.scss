@@ -1,0 +1,10 @@
+@import 'mixins';
+
+.header-btn {
+  @include mq(tablet) {
+    padding: 0 10px;
+  }
+  @media (orientation: landscape) and (max-width:812px){
+    padding: 0 10px;
+  }
+}

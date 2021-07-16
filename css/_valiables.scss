@@ -1,0 +1,11 @@
+// メディアクエリ
+$breakPoints: (
+  'pc': '1280px',
+  'tablet': '768px',
+  'sp': '480px',
+) !default;
+
+//カラー指定
+$main-color: #Faaf08;
+$sub-color: #Fa812F;
+$accent-color:#Fa4032;

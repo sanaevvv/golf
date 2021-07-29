@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="" type="" href="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
@@ -30,6 +29,7 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
+  <!-- <?php wp_head(); ?> -->
 </head>
 
 <body>
@@ -82,7 +82,7 @@
           </p>
         </div>
         <div>
-          <img src="https://source.unsplash.com/NngpTr4q5A4" alt="">
+          <img src="./img/golf_lesson.jpg" alt="">
         </div>
 
         <div>
@@ -94,7 +94,7 @@
             わからないことは何度でも質問して下さい。完全プライベートなので、周りの目を気にして、恥ずかしがることもありません。</p>
         </div>
         <div>
-          <img src="https://source.unsplash.com/NngpTr4q5A4" alt="">
+          <img src="./img/private_lesson.jpg" alt="">
         </div>
 
         <div>
@@ -115,7 +115,7 @@
           </p>
         </div>
         <div>
-          <img src="https://source.unsplash.com/NngpTr4q5A4" alt="">
+          <img src="./img/batting_practice.jpg" alt="">
         </div>
 
         <div>
@@ -161,7 +161,7 @@
         更に安心してゴルフを始められるように、無料で体験してから納得した上でお申し込み頂けます。</p>
     </section>
     <p class="expiry">
-      <span class="expiry-ttl">ビギナーズレッスンプランの有効期限は<br class="sp-br">3カ月の短期集中プログラムです。</span>
+      <span class="expiry-ttl">ビギナーズレッスンプランの有効期限は<br class="sp-br">3カ月の短期集中プログラムです</span>
       <span style="font-size: 80%; display: block; margin-top: 10px;">早い方は1カ月以内にプログラムを終了し<br class="sp-br"
           style="margin-left:-3em; ">コースデビューする事も可能です。</span>
     </p>
@@ -170,7 +170,64 @@
       <div class="arrow-icon"><i class="fas fa-caret-down fa-5x"></i></div>
       <div class="arrow-icon"><i class="fas fa-caret-down fa-5x"></i></div>
       <div class="arrow-icon"><i class="fas fa-caret-down fa-5x"></i></div>
-      <a href="" class="btn">予約サイトへ</a>
+      <h4>無料体験レッスンのご予約は以下の方法で受け付けております</h4>
+      <p class="text-orange">LINE公式アカウントから申し込み</p>
+      <ul>
+        <li>
+          <div class="grid">
+            <img src="img/LINE_APP.png" alt="LINE公式アカウントロゴ">
+            <img src="img/LINE_OA_logo2_black.png" alt="LINE公式アカウントロゴテキスト">
+
+            <div class="grid-text">
+              <p>友達登録をして、以下の情報をメッセージにてお伝えください。</p>
+              <ol>
+                <li>お名前（フリガナあり）</li>
+                <li>電話番号</li>
+                <li>希望日時（第三希望まで）</li>
+              </ol>
+              <p style="text-align: center;">
+                <a href="https://line.me/R/ti/p/%40640exeav"><img src="img/add.friend.png" alt="LINE友達追加"
+                    style="width: 280px; margin: 20px auto"></a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="text-orange">メールで申し込み</p>
+          <div class="grid-2col">
+            <div>
+              <a href="mailto:information@doonegolf.com"><img src="img/mail_mark.png" alt="メールロゴ画像"></a>
+            </div>
+            <div class="grid-text">
+              <p>（information@doonegolf.com）宛に下記情報を記入の上送信してください。</p>
+              <ol>
+                <li>お名前（フリガナあり）</li>
+                <li>電話番号</li>
+                <li>希望日時（第三希望まで）</li>
+              </ol>
+              <p class="text-small">※ドメイン指定受信 / メール指定受信をご利用の方は、メールを受信できない場合がありますので設定をご確認ください</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="text-orange">お電話で申し込み</p>
+          <div class="grid-2col">
+            <div>
+              <a href="tel:03-6452-2290">
+                <img src="img/tel_mark.png" alt="電話ロゴ画像">
+              </a>
+            </div>
+            <div style="max-width: 600px;">
+              <p>スタッフに体験レッスンの予約とお伝えください。</p>
+              <p class="tel">電話番号：03-6452-2290</p>
+              <p>受付時間：平日9時-20時、土日祝9時-15時</p>
+              <p class="text-small">※予約日を変更、キャンセルされる場合は、事前に必ずご連絡ください。間違え電話にはお気をつけください。</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
       <div class="qualification">
         <p>-ビギナーズレッスンプラン入会資格-</p>
         <ul>
@@ -186,7 +243,7 @@
 
 
   </main>
-  <footer class="display: flex">
+  <footer>
     <h1><a href="#"><img src="img/logo.png" style="width: 150px;" alt=""></a></h1>
     <address class="address">東急東横線「学芸大学」から徒歩2分<br>
       住所：〒152-000<br class="sp-br">4&emsp;東京都目黒区鷹番3-4-13<br class="sp-br">&emsp;笹崎ボクシングビルB1<br>
@@ -195,6 +252,7 @@
       https://www.do-1golf.com<br>
       メール：information@doonegolf.com</address>
   </footer>
+  <!-- <?php wp_footer(); ?> -->
 </body>
 
 </html>

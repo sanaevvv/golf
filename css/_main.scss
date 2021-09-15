@@ -125,9 +125,9 @@
       font-size: 1.7vw;
     }
   }
-   @media (orientation: landscape) and(max-width: 812px){
+  @media (orientation: landscape) and(max-width: 812px) {
     font-size: 1.5vw;
-   }
+  }
 }
 
 $bar-style: solid;
@@ -173,8 +173,8 @@ $bar-color: $sub-color;
     font-size: 1.8vw;
   }
   @media (orientation: landscape) and(max-width: 812px) {
-      font-size: 3rem;
-    }
+    font-size: 3rem;
+  }
 }
 .free-lesson {
   line-height: 1;
@@ -305,4 +305,12 @@ $bar-color: $sub-color;
     content: '';
     border: 2px solid $main-color;
   }
+}
+
+.no-add-fee {
+  font-weight: bold;
+  color: #Fa4032;
+  font-size: clamp(16px, 1.8vw, 24px);
+  text-shadow: 1px 1px 1px #fa4032;
+  line-height: 1.4;
 }
